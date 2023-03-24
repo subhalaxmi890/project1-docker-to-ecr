@@ -37,7 +37,7 @@ jobs:
     - name: tagging
       run: docker tag dockerdemobysubhalaxmi:latest public.ecr.aws/o2x7h2c3/dockerdemobysubhalaxmi:latest 
     - name: push
-      run: docker push public.ecr.aws/o2x7h2c3/dockerdemobysubhalaxmi:latest
+      run: docker push public.ecr.aws/o2x7h2c3/dockerdemobysubhalaxmi
 
 
 
