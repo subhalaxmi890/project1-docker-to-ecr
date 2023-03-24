@@ -24,9 +24,9 @@ jobs:
         role-to-assume: arn:aws:iam::140561047603:role/github-action-role
         aws-region: ap-south-1
 
-    # - name: Login to ECR
-    #   id: login-ecr
-    #   uses: aws-actions/amazon-ecr-login@v1
+    - name: Login to ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
 
     - name: login-ecr
       run: aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/o2x7h2c3
