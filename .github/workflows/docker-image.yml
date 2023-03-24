@@ -28,8 +28,8 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    - name: login-ecr
-      run: aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/o2x7h2c3
+    # - name: login-ecr
+    #   run: aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/o2x7h2c3
 
     - name: build_and_deploy
       run: docker build -t dockerdemobysubhalaxmi .
